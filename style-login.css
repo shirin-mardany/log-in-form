@@ -97,7 +97,7 @@ form {
   width: 500px;
   height: 700px;
   padding: 30px;
-  grid-area: 10px;
+  gap: 10px;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;

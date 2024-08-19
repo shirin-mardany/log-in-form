@@ -91,7 +91,10 @@ h4 {
 }
 
 /* --------------form style--------------------- */
+.form-div{
+    display: none;
 
+}
 form {
   background-color: #8d0e7c68;
   width: 500px;
@@ -105,6 +108,7 @@ form {
     inset -6px -6px 10px -6px var(--color-1-2),
     inset 6px 6px 10px -6px var(--color-LightGray-5);
   border-radius: 5px;
+  margin: 30px;
   h1 {
     height: 10%;
     border-bottom: solid var(--color-DarkKhaki-2);
@@ -143,22 +147,7 @@ form {
   }
 }
 
-button {
-  cursor: pointer;
-  border-radius: 5px;
-  height: 40px;
-  width: 300px;
-  margin: 0 auto;
-  font-size: 15px;
-  font-weight: bold;
-  transition: all 0.5s;
-  box-shadow: 6px 6px 8px var(--color-10),
-    inset -6px -6px 10px -6px var(--color-SaddleBrown-4),
-    inset 6px 6px 10px -6px var(--color-LightGray-5);
 
-  background-color: var(--color-DarkKhaki-2);
-  border: none;
-}
 button:hover {
   background-color: var(--color-Chocolate-9);
 }
@@ -193,4 +182,35 @@ p.or {
     top: -20%;
     left: 10px;
   }
+}
+button {
+  cursor: pointer;
+  border-radius: 5px;
+  height: 40px;
+  width: 300px;
+  margin: 0 auto;
+  font-size: 15px;
+  font-weight: bold;
+  transition: all 0.5s;
+  box-shadow: 6px 6px 8px var(--color-10),
+    inset -6px -6px 10px -6px var(--color-SaddleBrown-4),
+    inset 6px 6px 10px -6px var(--color-LightGray-5);
+
+  background-color: var(--color-DarkKhaki-2);
+  border: none;
+}
+.result {
+  background-color: #8d0e7c68;
+  width: 500px;
+  height: 700px;
+  padding: 30px;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 6px 6px 8px var(--color-10),
+    inset -6px -6px 10px -6px var(--color-1-2),
+    inset 6px 6px 10px -6px var(--color-LightGray-5);
+  border-radius: 5px;
+  display: none;
 }

@@ -1,0 +1,203 @@
+:root {
+  --color-1: Teal;
+  --color-1-1: rgb(2, 184, 184);
+  --color-1-2: rgb(1, 95, 95);
+  --color-DarkKhaki-2: DarkKhaki;
+  --color-Silver-3: Silver;
+  --color-SaddleBrown-4: SaddleBrown;
+  --color-LightGray-5: LightGray;
+  --color-Grey-6: Grey;
+  --color-DarkSlateGrey-7: rgb(47, 79, 79);
+  --color-DarkGoldenrod-8: DarkGoldenrod;
+  --color-Chocolate-9: Chocolate;
+  --color-10: rgb(69, 69, 69);
+
+}
+  /* -------------------animation---->body------------ */
+
+  @keyframes bgColor {
+    0%{
+        background-color: var(--color-1);
+    }
+    50%{
+        background-color: var(--color-Chocolate-9);  
+    }
+    100%{
+        background-color: var(--color-1);
+
+    }
+    
+  }
+  /* ----------------animation----->h1-------------- */
+@keyframes slidein {
+  from {
+    translate: 150vw 0;
+    scale: 200% 1;
+  }
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
+}
+  /* ---------------animation----->a--------------- */
+@keyframes growshrink {
+  /* 45%, */
+  75% {
+    scale: 100%;
+  }
+
+  50% {
+    scale: 200%;
+    color: black;
+  }
+}
+  /* ---------------animation--->h4----------------- */
+
+@keyframes slidein2 {
+  from {
+    translate: 150vw 0;
+    scale: 200% 1;
+  }
+
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
+}
+  /* --------------srart style--------------------- */
+
+
+* {
+  pad: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  animation:bgColor 5s infinite;
+   position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+}
+h4{
+  font-size: 60px;
+  animation-duration: 3s;
+  animation-name: slidein2;
+  animation-iteration-count: 2, 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+
+}
+ 
+  /* --------------form style--------------------- */
+
+form {
+background-color: #8d0e7c68;
+  width: 500px;
+  height: 700px;
+  padding: 30px;
+  grid-area: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  box-shadow: 6px 6px 8px var(--color-10),
+      inset -6px -6px 10px -6px var(--color-1-2),
+      inset 6px 6px 10px -6px var(--color-LightGray-5);
+border-radius: 5px;
+  h1 {
+    height: 10%;
+    border-bottom: solid var(--color-DarkKhaki-2);
+      animation-duration: 2s;
+  animation-name: slidein;
+  }
+  div {
+    label {
+      width: 100px;
+      padding: 10px;
+      display: inline-block;
+      margin-bottom: 15px;
+      font-size: 15px;
+      font-weight: bolder;
+    cursor:pointer;
+
+    }
+    input {
+border-radius: 5px;
+      text-align: center;
+      height: 40px;
+      width: 300px;
+      box-shadow: inset 6px 6px 8px var(--color-10), inset -6px -6px 10px -6px white;
+      outline: none;
+      border: none;
+      background-color: var(--color-Silver-3);
+    }
+  }
+a {
+  color: inherit;
+  font-weight: bold;
+  text-decoration: none;
+    display: inline-block;
+  animation-duration: 3s;
+  animation-name: growshrink;
+}
+}
+
+  button {
+    cursor:pointer;
+border-radius: 5px;
+    height: 40px;
+    width: 300px;
+    margin: 0 auto;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 0.5s;
+    box-shadow: 6px 6px 8px var(--color-10),
+      inset -6px -6px 10px -6px var(--color-SaddleBrown-4),
+      inset 6px 6px 10px -6px var(--color-LightGray-5);
+
+    background-color: var(--color-DarkKhaki-2);
+    border: none;
+  }
+  button:hover {
+    background-color: var(--color-Chocolate-9);
+  }
+
+  p.description ,.signup{
+    text-align: center;
+    font-size: 18px;
+     
+ 
+  }
+
+  p.or {
+    font-size: 28px;
+    text-align: center;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 100px;
+      height: 2px;
+      background-color: black;
+      position: relative;
+      top: -20%;
+      right: 10px;
+    }
+
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 100px;
+      height: 2px;
+      background-color: black;
+      position: relative;
+      top: -20%;
+      left: 10px;
+    }
+  }
+

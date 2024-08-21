@@ -39,12 +39,12 @@
 /* ---------------animation----->a--------------- */
 @keyframes growshrink {
   /* 45%, */
-  75% {
-    scale: 100%;
+  80% {
+    scale: 70%;
   }
 
   50% {
-    scale: 200%;
+    scale: 150%;
     color: black;
   }
 }
@@ -91,10 +91,7 @@ h4 {
 }
 
 /* --------------form style--------------------- */
-.form-div{
-    display: none;
 
-}
 form {
   background-color: #8d0e7c68;
   width: 500px;
@@ -114,6 +111,10 @@ form {
     border-bottom: solid var(--color-DarkKhaki-2);
     animation-duration: 2s;
     animation-name: slidein;
+  animation-fill-mode: forwards;
+ 
+
+
   }
   div {
     label {
@@ -144,6 +145,7 @@ form {
     display: inline-block;
     animation-duration: 3s;
     animation-name: growshrink;
+    animation-delay: 7s;
   }
 }
 
@@ -152,8 +154,7 @@ button:hover {
   background-color: var(--color-Chocolate-9);
 }
 
-p.description,
-.signup {
+p.forget{
   text-align: center;
   font-size: 18px;
 }
@@ -195,14 +196,14 @@ button {
   box-shadow: 6px 6px 8px var(--color-10),
     inset -6px -6px 10px -6px var(--color-SaddleBrown-4),
     inset 6px 6px 10px -6px var(--color-LightGray-5);
-
+  letter-spacing: 1px;
   background-color: var(--color-DarkKhaki-2);
   border: none;
 }
-.result {
+.result{
   background-color: #8d0e7c68;
   width: 500px;
-  height: 700px;
+  height: 200px;
   padding: 30px;
   gap: 10px;
   display: flex;
@@ -212,5 +213,15 @@ button {
     inset -6px -6px 10px -6px var(--color-1-2),
     inset 6px 6px 10px -6px var(--color-LightGray-5);
   border-radius: 5px;
-  display: none;
+ 
+}
+.result-p{
+ text-align: center;
+  font-size: 38px;
+  margin-bottom: 30px;
+}
+
+/* -------------------hide elements >>--------------------- */
+.hide{
+   display: none!important;
 }

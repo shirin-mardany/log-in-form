@@ -3,13 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>login form</title>
     <!-- css fils  -->
     <link rel="stylesheet" href="style-login.css" />
   </head>
   <body>
-    <h4>HELLO ...</h4>
-    <button type="submit" class="submit">do u wanna login?</button>
+    <h4 id="hello">HELLO ...</h4>
+    <!-- <button type="submit" class="submit hide" id="question-btn"> -->
+      <!-- do u wanna login? -->
+    <!-- </button> -->
 
     <!-- login or logout form >> -->
     <div class="container">
@@ -20,7 +22,7 @@
           <div>
             <label for="userName"> UserName : </label>
             <input
-              type="text"
+              type="email"
               name=""
               id="userName"
               placeholder="for example : shirin"
@@ -28,26 +30,31 @@
             <br />
             <label for="passWord"> PssWord : </label>
             <input
-              type="number"
+              type="password"
               name=""
               id="passWord"
               placeholder="for example : nIrisH20"
             />
           </div>
           <button type="submit" class="submit">login</button>
-          <p class="description">
+          <p class="forget">
             Forgotten your login details ?
             <a href="#"> Get help with signing in.</a>
           </p>
           <p class="or">or</p>
-          <button type="submit">login with google</button>
-          <button type="submit">login with faceBook</button>
-          <p class="signup">Don't have an account ? <a href="#">SignUp</a></p>
+          <button type="submit" class="google-btn">login with google</button>
+          <button type="submit" class="faceBook-btn">
+            login with faceBook
+          </button>
+          <!-- <p class="signup">Don't have an account ? <a href="#">SignUp</a></p> -->
         </form>
       </div>
+      <!-- result-div >> -->
       <div class="result-div">
-        <div class="result">
-          <p class="hello"></p>
+        <div id="result hide">
+          <p class="token"></p>
+          <p class="result-p hide">welcom shirin</p>
+          <button type="submit" class="logout hide">logout</button>
         </div>
       </div>
     </div>

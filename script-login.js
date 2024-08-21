@@ -1,8 +1,8 @@
 "use strict";
 
 // giv elements >>
-const divFormEl = document.querySelector(".form-div");
-const loginFormEl = document.querySelector("form");
+// const divFormEl = document.querySelector(".form-div");
+const loginFormEl = document.querySelector(".form");
 const userInpEl = document.querySelector("#userName");
 const passInpEl = document.querySelector("#passWord");
 const googleBtn = document.querySelector(".google-btn");

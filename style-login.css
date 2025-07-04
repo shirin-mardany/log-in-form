@@ -94,8 +94,8 @@ h4 {
 
 .form {
   background-color: #8d0e7c68;
-  width: 500px;
-  height: 700px;
+  width: 700px;
+  height: 500px;
   padding: 30px;
   gap: 10px;
   display: flex;
@@ -130,12 +130,13 @@ h4 {
       border-radius: 5px;
       text-align: center;
       height: 40px;
-      width: 300px;
+      width: 500px;
       box-shadow: inset 6px 6px 8px var(--color-10),
         inset -6px -6px 10px -6px white;
       outline: none;
       border: none;
       background-color: var(--color-Silver-3);
+      float: right;
     }
   }
   a {
@@ -156,7 +157,7 @@ button:hover {
 
 p.forget{
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 p.or {
